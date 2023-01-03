@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id = "@+id/myPage"
+            android:title = "Me"/>
+        <item android:id = "@+id/myRecord"
+            android:title="나의 기록"/>
+        <item android:id = "@+id/goal"
+            android:title="목표"/>
+        <item android:id= "@+id/timer"
+            android:title="시간 알림"/>
+        <item android:id = "@+id/easyEnter"
+            android:title ="간편 입력"/>
+        <item android:id = "@+id/storage"
+            android:title="보관함"/>
+
+    </group>
+</menu>

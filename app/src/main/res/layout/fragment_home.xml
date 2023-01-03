@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.HomeFragment"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewUser"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/user_icon"
+            tools:layout_editor_absoluteY="35dp" />
+
+        <ImageView
+            android:id="@+id/imageViewNext"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/right_icon"
+            tools:layout_editor_absoluteY="35dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewUser" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:text="me"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewNext" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewNext"
+            tools:layout_editor_absoluteY="77dp"
+            tools:src="@tools:sample/avatars" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonChangeMW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#B8B5B5"
+        tools:text="월"
+        tools:drawableRight="@drawable/ic_baseline_arrow_drop_up_24"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mcv_showOtherDates="all"
+                app:mcv_selectionColor="#00F"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
